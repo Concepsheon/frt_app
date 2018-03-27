@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--<meta name="description" content="">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Florida Rock &amp; Tank Lines, Inc.</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="apple-touch-startup-image" href="splash.png" />
+  <!--<link rel="stylesheet" href="style.css">-->
+
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideAddressBar, 0);
+    }, false);
+
+    var width = 0;
+
+    function hideAddressBar() {
+      if(window.innerWidth != width) {
+      	width = window.innerWidth;
+
+      	var orient = width == 320 ? "profile" : "landscape";
+
+      	document.body.setAttribute("orient", orient);
+      		setTimeout(function() {
+      			window.scrollTo(0, 1);
+      		}, 100);
+      	}
+      }
+      setInterval(hideAddressBar, 100);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <section>
+    <nav>
+      <a class="nav-brand" href="index.html"><img id="logo" src="splash.png" alt="Florida Rock &amp; Tank Lines, Inc" width="200" height="80"/></a>
+    </nav>
+  </section>
+
+  <section id="content">
+  	<h2 style="text-align: center;">Terminal Inspection (Shop Terminal)</h2>
+  	<form>
+
+  		<fieldset>
+  			<!--<progress value="0" max="100"></progress>-->
+  			<input type="text" name="location" placeholder="Location">
+  			<input type="text" name="inspected" placeholder="Inspected By">
+        <input type="text" name="terminal" placeholder="Terminal">
+
+  			<p>Date/Time</p>
+  			<input type="date" name="date">
+  			<input type="time" name="time">
+
+  			<div class="button-group">
+          <a class="btn btn-back" href="index.html">Back</a>
+          <a class="btn btn-next" href="#">Next</a>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Shop bulletin board up to date, proper location</span>
+
+            <div class="content">
+              <input id="bok" type="radio" name="board" value="OK">
+              <label for="bok">OK</label>
+
+              <input id="bf" type="radio" name="board" value="Fail">
+              <label for="bf">Fail</label>
+
+              <input id="bna" type="radio" name="board" value="N/A">
+              <label for="bna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Shop bulletin board has a listing of the steps to take in case of fire and phone numbers of those to notify</span>
+
+            <div class="content">
+              <input id="lok" type="radio" name="listing" value="OK">
+              <label for="lok">OK</label>
+
+              <input id="lf" type="radio" name="listing" value="Fail">
+              <label for="lf">Fail</label>
+
+              <input id="lna" type="radio" name="listing" value="N/A">
+              <label for="lna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Shop safety meeting file, monthly attendance by all shop personnel</span>
+
+            <div class="content">
+              <input id="safetyok" type="radio" name="safety" value="OK">
+              <label for="safetyok">OK</label>
+
+              <input id="safetyf" type="radio" name="safety" value="Fail">
+              <label for="safetyf">Fail</label>
+
+              <input id="safetyna" type="radio" name="safety" value="N/A">
+              <label for="safetyna">N/A</label>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Housekeeping in general (1910.141, 1910.22, 1910.106)</span>
+
+            <div class="content">
+              <div >
+                <input id="generalok" type="radio" name="general" value="OK">
+                <label for="generalok">OK</label>
+
+                <input id="generalf" type="radio" name="general" value="Fail">
+                <label for="generalf">Fail</label>
+
+                <input id="generalna" type="radio" name="general" value="N/A">
+                <label for="generalna">N/A</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Open containers of oils or hazardous products (1910.120)</span>
+
+            <div class="content">
+              <input id="productsok" type="radio" name="products" value="OK">
+              <label for="productsok">OK</label>
+
+              <input id="productsf" type="radio" name="products" value="Fail">
+              <label for="productsf">Fail</label>
+
+              <input id="productsna" type="radio" name="products" value="N/A">
+              <label for="productsna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Clean work benches and work areas (1910.22)</span>
+
+            <div class="content">
+              <input id="benchesok" type="radio" name="benches" value="OK">
+              <label for="benchesok">OK</label>
+
+              <input id="benchesf" type="radio" name="benches" value="Fail">
+              <label for="benchesf">Fail</label>
+
+              <input id="benchesna" type="radio" name="benches" value="N/A">
+              <label for="benchesna">N/A</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+        <div class="accordion">
+            <div class="accordion-item">
+              <span>Hoses and fittings properly stored (1910.158)</span>
+
+              <div class="content">
+                <input id="storedok" type="radio" name="stored" value="OK">
+                <label for="storedok">OK</label>
+
+                <input id="storedf" type="radio" name="stored" value="Fail">
+                <label for="storedf">Fail</label>
+
+                <input id="storedna" type="radio" name="stored" value="N/A">
+                <label for="storedna">N/A</label>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <span>Large shop tools and jacks properly stored (1910.22)</span>
+
+              <div class="content">
+                <input id="toolsok" type="radio" name="tools" value="OK">
+                <label for="toolsok">OK</label>
+
+                <input id="toolsf" type="radio" name="tools" value="Fail">
+                <label for="toolsf">Fail</label>
+
+                <input id="toolsna" type="radio" name="tools" value="N/A">
+                <label for="toolsna">N/A</label>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <span>Thruways and walkways clear and open (1910.106, 1910.22)</span>
+
+              <div class="content">
+                <input id="walkwaysok" type="radio" name="walkways" value="OK">
+                <label for="walkwaysok">OK</label>
+
+                <input id="walkwaysf" type="radio" name="walkways" value="Fail">
+                <label for="walkwaysf">Fail</label>
+
+                <input id="walkwaysna" type="radio" name="walkways" value="N/A">
+                <label for="walkwaysna">N/A</label>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <span>Items leaning against walls that can fall and cause harm (1910.22)</span>
+
+              <div class="content">
+                <input id="itemsok" type="radio" name="items" value="OK">
+                <label for="itemsok">OK</label>
+
+                <input id="itemsf" type="radio" name="items" value="Fail">
+                <label for="itemsf">Fail</label>
+
+                <input id="itemsna" type="radio" name="items" value="N/A">
+                <label for="itemsna">N/A</label>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <span>Dirty shop rag storage containers available with fire proof lid and proper markings (1910.106)</span>
+
+              <div class="content">
+                <input id="ragok" type="radio" name="rag" value="OK">
+                <label for="ragok">OK</label>
+
+                <input id="ragf" type="radio" name="rag" value="Fail">
+                <label for="ragf">Fail</label>
+
+                <input id="ragna" type="radio" name="rag" value="N/A">
+                <label for="ragna">N/A</label>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <span>"EXIT" signs posted above all doors leading out of the area (1910.37)</span>
+
+              <div class="content">
+                <input id="exitok" type="radio" name="exit" value="OK">
+                <label for="exitok">OK</label>
+
+                <input id="exitf" type="radio" name="exit" value="Fail">
+                <label for="exitf">Fail</label>
+
+                <input id="exitna" type="radio" name="exit" value="N/A">
+                <label for="exitna">N/A</label>
+              </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>"NO EXIT" signs posted above all doors leading out of the area (1910.37)</span>
+            <div class="content">
+              <input id="noexitok" type="radio" name="noexit" value="OK">
+              <label for="noexitok">OK</label>
+
+              <input id="noexitf" type="radio" name="noexit" value="Fail">
+              <label for="noexitf">Fail</label>
+
+              <input id="noexitna" type="radio" name="noexit" value="N/A">
+              <label for="noexitna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Exits clear and unobstructed (1910.37)</span>
+            <div class="content">
+              <input id="clearok" type="radio" name="clear" value="OK">
+              <label for="clearok">OK</label>
+
+              <input id="clearf" type="radio" name="clear" value="Fail">
+              <label for="clearf">Fail</label>
+
+              <input id="clearna" type="radio" name="clear" value="N/A">
+              <label for="clearna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs placed at the entrance to shop and service areas, including bolier room, tire room, trailer shop and blower rack</span>
+            <div class="content">
+              <input id="areasok" type="radio" name="areas" value="OK">
+              <label for="areasok">OK</label>
+
+              <input id="areasf" type="radio" name="areas" value="Fail">
+              <label for="areasf">Fail</label>
+
+              <input id="areasna" type="radio" name="areas" value="N/A">
+              <label for="areasna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs placed above parts washer (1910.104)</span>
+            <div class="content">
+              <input id="aboveok" type="radio" name="above" value="OK">
+              <label for="aboveok">OK</label>
+
+              <input id="abovef" type="radio" name="above" value="Fail">
+              <label for="abovef">Fail</label>
+
+              <input id="abovena" type="radio" name="above" value="N/A">
+              <label for="abovena">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs placed above oxygen and accetylene storage areas (1910.104)</span>
+            <div class="content">
+              <input id="oxygenok" type="radio" name="oxygen" value="OK">
+              <label for="oxygenok">OK</label>
+
+              <input id="oxygenf" type="radio" name="oxygen" value="Fail">
+              <label for="oxygenf">Fail</label>
+
+              <input id="oxygenna" type="radio" name="oxygen" value="N/A">
+              <label for="oxygenna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs placed above battery storage areas (new and used) (1910.178)</span>
+            <div class="content">
+              <input id="batteryok" type="radio" name="battery" value="OK">
+              <label for="batteryok">OK</label>
+
+              <input id="batteryf" type="radio" name="battery" value="Fail">
+              <label for="batteryf">Fail</label>
+
+              <input id="batteryna" type="radio" name="battery" value="N/A">
+              <label for="batteryna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs placed above paint materials storage cabinet (1910.106)</span>
+            <div class="content">
+              <input id="materialsok" type="radio" name="materials" value="OK">
+              <label for="materialsok">OK</label>
+
+              <input id="materialsf" type="radio" name="materials" value="Fail">
+              <label for="materialsf">Fail</label>
+
+              <input id="materialsna" type="radio" name="materials" value="N/A">
+              <label for="materialsna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs in oil storage area</span>
+            <div class="content">
+              <input id="oilok" type="radio" name="oil" value="OK">
+              <label for="oilok">OK</label>
+
+              <input id="oilf" type="radio" name="oil" value="Fail">
+              <label for="oilf">Fail</label>
+
+              <input id="oilna" type="radio" name="oil" value="N/A">
+              <label for="oilna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs at fuel island (1910.109)</span>
+            <div class="content">
+              <input id="fuelok" type="radio" name="fuel" value="OK">
+              <label for="fuelok">OK</label>
+
+              <input id="fuelf" type="radio" name="fuel" value="Fail">
+              <label for="fuelf">Fail</label>
+
+              <input id="fuelna" type="radio" name="fuel" value="N/A">
+              <label for="fuelna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs on above ground storage tanks (1910.106)</span>
+            <div class="content">
+              <input id="groundok" type="radio" name="ground" value="OK">
+              <label for="groundok">OK</label>
+
+              <input id="groundf" type="radio" name="ground" value="Fail">
+              <label for="groundf">Fail</label>
+
+              <input id="groundna" type="radio" name="ground" value="N/A">
+              <label for="groundna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Blower rack electrical system and lights vapor proof (1910.307)</span>
+            <div class="content">
+              <input id="systemok" type="radio" name="system" value="OK">
+              <label for="systemok">OK</label>
+
+              <input id="systemf" type="radio" name="system" value="Fail">
+              <label for="systemf">Fail</label>
+
+              <input id="systemna" type="radio" name="system" value="N/A">
+              <label for="systemna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Blower rack in good repair and painted (1910.22)</span>
+            <div class="content">
+              <input id="paintedok" type="radio" name="painted" value="OK">
+              <label for="paintedok">OK</label>
+
+              <input id="paintedf" type="radio" name="painted" value="Fail">
+              <label for="paintedf">Fail</label>
+
+              <input id="paintedna" type="radio" name="painted" value="N/A">
+              <label for="paintedna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Blower rack railing and chains in place (1910.219)</span>
+            <div class="content">
+              <input id="chainsok" type="radio" name="chains" value="OK">
+              <label for="chainsok">OK</label>
+
+              <input id="chainsf" type="radio" name="chains" value="Fail">
+              <label for="chainsf">Fail</label>
+
+              <input id="chainsna" type="radio" name="chains" value="N/A">
+              <label for="chainsna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Blower rack access ladder - proper type (1910.27, 1910.26, 1920.25)</span>
+            <div class="content">
+              <input id="ladderok" type="radio" name="ladder" value="OK">
+              <label for="ladderok">OK</label>
+
+              <input id="ladderf" type="radio" name="ladder" value="Fail">
+              <label for="ladderf">Fail</label>
+
+              <input id="ladderna" type="radio" name="ladder" value="N/A">
+              <label for="ladderna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Blower rack hoses - spark proof type</span>
+            <div class="content">
+              <input id="hosesok" type="radio" name="hoses" value="OK">
+              <label for="hosesok">OK</label>
+
+              <input id="hosesf" type="radio" name="hoses" value="Fail">
+              <label for="hosesf">Fail</label>
+
+              <input id="hosesna" type="radio" name="hoses" value="N/A">
+              <label for="hosesna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Blower rack - "NO SMOKING" signs posted</span>
+            <div class="content">
+              <input id="postedok" type="radio" name="posted" value="OK">
+              <label for="postedok">OK</label>
+
+              <input id="postedf" type="radio" name="posted" value="Fail">
+              <label for="postedf">Fail</label>
+
+              <input id="postedna" type="radio" name="posted" value="N/A">
+              <label for="postedna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Blower rack grounding system (1910.314)</span>
+            <div class="content">
+              <input id="brok" type="radio" name="br" value="OK">
+              <label for="brok">OK</label>
+
+              <input id="brf" type="radio" name="br" value="Fail">
+              <label for="brf">Fail</label>
+
+              <input id="brna" type="radio" name="br" value="N/A">
+              <label for="brna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Wash rack - electrical system and lights vapor proof (1910.307)</span>
+            <div class="content">
+              <input id="washok" type="radio" name="wash" value="OK">
+              <label for="washok">OK</label>
+
+              <input id="washf" type="radio" name="wash" value="Fail">
+              <label for="washf">Fail</label>
+
+              <input id="washna" type="radio" name="wash" value="N/A">
+              <label for="washna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Wash rack - painted and in good repair (1910.22)</span>
+            <div class="content">
+              <input id="repairok" type="radio" name="repair" value="OK">
+              <label for="repairok">OK</label>
+
+              <input id="repairf" type="radio" name="repair" value="Fail">
+              <label for="repairf">Fail</label>
+
+              <input id="repairna" type="radio" name="repair" value="N/A">
+              <label for="repairna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Wash rack - railing and chains in place (1910.219)</span>
+            <div class="content">
+              <input id="railingok" type="radio" name="railing" value="OK">
+              <label for="railingok">OK</label>
+
+              <input id="railingf" type="radio" name="railing" value="Fail">
+              <label for="railingf">Fail</label>
+
+              <input id="railingna" type="radio" name="railing" value="N/A">
+              <label for="railingna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Wash rack - access ladder - proper type (1910.27)</span>
+            <div class="content">
+              <input id="accessok" type="radio" name="access" value="OK">
+              <label for="accessok">OK</label>
+
+              <input id="accessf" type="radio" name="access" value="Fail">
+              <label for="accessf">Fail</label>
+
+              <input id="accessna" type="radio" name="access" value="N/A">
+              <label for="accessna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Wash rack - steam hoses in good repair and spark proof (1910.107, 1910.110, 1910.109, 1910.158)</span>
+            <div class="content">
+              <input id="steamok" type="radio" name="steam" value="OK">
+              <label for="steamok">OK</label>
+
+              <input id="steamf" type="radio" name="steam" value="Fail">
+              <label for="steamf">Fail</label>
+
+              <input id="steamna" type="radio" name="steam" value="N/A">
+              <label for="steamna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Wash rack - "NO SMOKING" signs posted (1910.109)</span>
+            <div class="content">
+              <input id="waok" type="radio" name="wa" value="OK">
+              <label for="waok">OK</label>
+
+              <input id="waf" type="radio" name="wa" value="Fail">
+              <label for="waf">Fail</label>
+
+              <input id="wana" type="radio" name="wa" value="N/A">
+              <label for="wana">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Wash rack - grounding system properly constructed (1910.106, 1910.304)</span>
+            <div class="content">
+              <input id="constructok" type="radio" name="construct" value="OK">
+              <label for="constructok">OK</label>
+
+              <input id="constructf" type="radio" name="construct" value="Fail">
+              <label for="constructf">Fail</label>
+
+              <input id="constructa" type="radio" name="construct" value="N/A">
+              <label for="constructna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Boiler room - clean and free of flammables (1910.22)</span>
+            <div class="content">
+              <input id="fok" type="radio" name="flammable" value="OK">
+              <label for="fok">OK</label>
+
+              <input id="ff" type="radio" name="flammable" value="Fail">
+              <label for="ff">Fail</label>
+
+              <input id="fna" type="radio" name="flammable" value="N/A">
+              <label for="fna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Boiler room - fuel supply and piping (1910.106)</span>
+            <div class="content">
+              <input id="supplyok" type="radio" name="supply" value="OK">
+              <label for="supplyok">OK</label>
+
+              <input id="supplyf" type="radio" name="supply" value="Fail">
+              <label for="supplyf">Fail</label>
+
+              <input id="supplyna" type="radio" name="supply" value="N/A">
+              <label for="supplyna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Boiler room - soft water system working properly</span>
+            <div class="content">
+              <input id="softok" type="radio" name="soft" value="OK">
+              <label for="softok">OK</label>
+
+              <input id="softf" type="radio" name="soft" value="Fail">
+              <label for="softf">Fail</label>
+
+              <input id="softna" type="radio" name="soft" value="N/A">
+              <label for="softna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Boiler room - "NO SMOKING" signs in place</span>
+            <div class="content">
+              <input id="roomok" type="radio" name="room" value="OK">
+              <label for="roomok">OK</label>
+
+              <input id="roomf" type="radio" name="room" value="Fail">
+              <label for="roomf">Fail</label>
+
+              <input id="roomna" type="radio" name="room" value="N/A">
+              <label for="roomna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Boiler room - inspections by "outside" qualified firm, up to date and on file. Verify current filing date</span>
+            <div class="content">
+              <input id="verifyok" type="radio" name="verify" value="OK">
+              <label for="verifyk">OK</label>
+
+              <input id="verifyf" type="radio" name="verify" value="Fail">
+              <label for="verifyf">Fail</label>
+
+              <input id="verifyna" type="radio" name="verify" value="N/A">
+              <label for="verifyna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Boiler room - grounding system properly constructed</span>
+            <div class="content">
+              <input id="brconstructok" type="radio" name="br-construct" value="OK">
+              <label for="brconstructok">OK</label>
+
+              <input id="brconstructf" type="radio" name="br-construct" value="Fail">
+              <label for="brconstructf">Fail</label>
+
+              <input id="brconstructa" type="radio" name="br-construct" value="N/A">
+              <label for="brconstructna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Approved fire extinguishers - within 75 feet of every work area (1910.157)</span>
+            <div class="content">
+              <input id="ftok" type="radio" name="feet" value="OK">
+              <label for="ftok">OK</label>
+
+              <input id="ftf" type="radio" name="feet" value="Fail">
+              <label for="ftf">Fail</label>
+
+              <input id="ftna" type="radio" name="feet" value="N/A">
+              <label for="ftna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Approved fire extinguishers - in every room (1910.157)</span>
+            <div class="content">
+              <input id="everyok" type="radio" name="every" value="OK">
+              <label for="everyok">OK</label>
+
+              <input id="everyf" type="radio" name="every" value="Fail">
+              <label for="everyf">Fail</label>
+
+              <input id="everyna" type="radio" name="every" value="N/A">
+              <label for="everyna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Approved fire extinguishers - placed at a minimum height of 35" (1910.157)</span>
+            <div class="content">
+              <input id="miniok" type="radio" name="minimum" value="OK">
+              <label for="miniok">OK</label>
+
+              <input id="minif" type="radio" name="minimum" value="Fail">
+              <label for="minif">Fail</label>
+
+              <input id="minina" type="radio" name="minimum" value="N/A">
+              <label for="minina">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Approved fire extinguishers - readily accessible and not obstructed from view (1910.157)</span>
+            <div class="content">
+              <input id="accessok" type="radio" name="accessible" value="OK">
+              <label for="accessok">OK</label>
+
+              <input id="accessf" type="radio" name="accessible" value="Fail">
+              <label for="accessf">Fail</label>
+
+              <input id="accessna" type="radio" name="accessible" value="N/A">
+              <label for="accessna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"FIRE EXTINGUISHER" signs with arrow placed above all extinguishers (1910.157)</span>
+            <div class="content">
+              <input id="arrowok" type="radio" name="arrow" value="OK">
+              <label for="arrowok">OK</label>
+
+              <input id="arrowf" type="radio" name="arrow" value="Fail">
+              <label for="arrowf">Fail</label>
+
+              <input id="arrowna" type="radio" name="arrow" value="N/A">
+              <label for="arrowna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Approved fire extinguishers - inspection less than one year old and properly tagged (1910.157)</span>
+            <div class="content">
+              <input id="inspectionok" type="radio" name="inspection" value="OK">
+              <label for="inspectionok">OK</label>
+
+              <input id="inspectionf" type="radio" name="inspection" value="Fail">
+              <label for="inspectionf">Fail</label>
+
+              <input id="inspectionna" type="radio" name="inspection" value="N/A">
+              <label for="inspectionna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Approved fire extinguishers - fueling area - must be of at least 12BC rating (1910.157)</span>
+            <div class="content">
+              <input id="ratingok" type="radio" name="rating" value="OK">
+              <label for="ratingok">OK</label>
+
+              <input id="ratingf" type="radio" name="rating" value="Fail">
+              <label for="ratingf">Fail</label>
+
+              <input id="ratingna" type="radio" name="rating" value="N/A">
+              <label for="ratingna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"HIGH VOLTAGE" sign posted above all main electrical boxes (1910.308, 1910.305)</span>
+            <div class="content">
+              <input id="voltageok" type="radio" name="voltage" value="OK">
+              <label for="voltageok">OK</label>
+
+              <input id="voltagef" type="radio" name="voltage" value="Fail">
+              <label for="voltagef">Fail</label>
+
+              <input id="voltagena" type="radio" name="voltage" value="N/A">
+              <label for="voltagena">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>All electrical switches properly marked as to what is controlled by each switch (1910.305)</span>
+            <div class="content">
+              <input id="switchok" type="radio" name="switch" value="OK">
+              <label for="switchok">OK</label>
+
+              <input id="switchf" type="radio" name="switch" value="Fail">
+              <label for="switchf">Fail</label>
+
+              <input id="switchna" type="radio" name="switch" value="N/A">
+              <label for="switchna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>All electrical boxes free of all foreign items and flammable and combustible items (1910.305, 1910.106)</span>
+            <div class="content">
+              <input id="foreignok" type="radio" name="foreign" value="OK">
+              <label for="foreignok">OK</label>
+
+              <input id="foreignf" type="radio" name="foreign" value="Fail">
+              <label for="foreignf">Fail</label>
+
+              <input id="foreignna" type="radio" name="foreign" value="N/A">
+              <label for="foreignna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Electrical "LOCK OUT" available on all boxes, lock and master keytagged as such and available (including trucks) (1910.147)</span>
+            <div class="content">
+              <input id="ktok" type="radio" name="keytagged" value="OK">
+              <label for="ktok">OK</label>
+
+              <input id="ktf" type="radio" name="keytagged" value="Fail">
+              <label for="ktf">Fail</label>
+
+              <input id="ktna" type="radio" name="keytagged" value="N/A">
+              <label for="ktna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Electrical sockets grounded (1910.304)</span>
+            <div class="content">
+              <input id="socketok" type="radio" name="socket" value="OK">
+              <label for="socketok">OK</label>
+
+              <input id="socketf" type="radio" name="socket" value="Fail">
+              <label for="socketf">Fail</label>
+
+              <input id="socketna" type="radio" name="socket" value="N/A">
+              <label for="socketna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>All lights in good working order, no open sockets (1910.303, 1910.305)</span>
+            <div class="content">
+              <input id="ook" type="radio" name="order" value="OK">
+              <label for="ook">OK</label>
+
+              <input id="of" type="radio" name="order" value="Fail">
+              <label for="of">Fail</label>
+
+              <input id="ona" type="radio" name="order" value="N/A">
+              <label for="ona">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>All electrical wiring in conduit (1910.303, 1910.305)</span>
+            <div class="content">
+              <input id="wiringok" type="radio" name="wiring" value="OK">
+              <label for="wiringok">OK</label>
+
+              <input id="wiringf" type="radio" name="wiring" value="Fail">
+              <label for="wiringf">Fail</label>
+
+              <input id="wiringna" type="radio" name="wiring" value="N/A">
+              <label for="wiringna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Vapor proof lights and electrical wiring in hazardous storage areas</span>
+            <div class="content">
+              <input id="vplok" type="radio" name="vpl" value="OK">
+              <label for="vplok">OK</label>
+
+              <input id="vplf" type="radio" name="vpl" value="Fail">
+              <label for="vplf">Fail</label>
+
+              <input id="vplna" type="radio" name="vpl" value="N/A">
+              <label for="vplna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Electrical tools of shock-proof type or with ground plug (1910.304, 1910.243)</span>
+            <div class="content">
+              <input id="plugok" type="radio" name="plug" value="OK">
+              <label for="plugok">OK</label>
+
+              <input id="plugf" type="radio" name="plug" value="Fail">
+              <label for="plugf">Fail</label>
+
+              <input id="plugna" type="radio" name="plug" value="N/A">
+              <label for="plugna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Safety glasses and shields located at all drill and grinder locations (1910.215)</span>
+            <div class="content">
+              <input id="shieldok" type="radio" name="shield" value="OK">
+              <label for="shieldok">OK</label>
+
+              <input id="shieldf" type="radio" name="shield" value="Fail">
+              <label for="shieldf">Fail</label>
+
+              <input id="shieldna" type="radio" name="shield" value="N/A">
+              <label for="shieldna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"SAFETY GLASSES MUST BE WORN" signs posted at all drill and grinder locations (1910.215)</span>
+            <div class="content">
+              <input id="dok" type="radio" name="drill" value="OK">
+              <label for="dok">OK</label>
+
+              <input id="df" type="radio" name="drill" value="Fail">
+              <label for="df">Fail</label>
+
+              <input id="dna" type="radio" name="drill" value="N/A">
+              <label for="dna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Grinder wheels covered - including end plates (1910.215)</span>
+            <div class="content">
+              <input id="pok" type="radio" name="plate" value="OK">
+              <label for="pok">OK</label>
+
+              <input id="pf" type="radio" name="plate" value="Fail">
+              <label for="pf">Fail</label>
+
+              <input id="pna" type="radio" name="plate" value="N/A">
+              <label for="pna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Grinders bolted - as not to move during operation (1910.215)</span>
+            <div class="content">
+              <input id="boltok" type="radio" name="bolted" value="OK">
+              <label for="boltok">OK</label>
+
+              <input id="boltf" type="radio" name="bolted" value="Fail">
+              <label for="boltf">Fail</label>
+
+              <input id="boltna" type="radio" name="bolted" value="N/A">
+              <label for="boltna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Grinder work rest in good repair and adjusted 1/8 inch from wheel (1910.215)</span>
+            <div class="content">
+              <input id="gwrok" type="radio" name="gwr" value="OK">
+              <label for="gwrok">OK</label>
+
+              <input id="gwrf" type="radio" name="gwr" value="Fail">
+              <label for="gwrf">Fail</label>
+
+              <input id="gwrna" type="radio" name="gwr" value="N/A">
+              <label for="gwrna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Chain hoist chains free of kinks or twists (1910.306)</span>
+            <div class="content">
+              <input id="hoistok" type="radio" name="hoist" value="OK">
+              <label for="hoistok">OK</label>
+
+              <input id="hoistf" type="radio" name="hoist" value="Fail">
+              <label for="hoistf">Fail</label>
+
+              <input id="hoistna" type="radio" name="hoist" value="N/A">
+              <label for="hoistna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Chain hoist marked with tonnage of lifting capacity. Safety clip in working order (1910.306)</span>
+            <div class="content">
+              <input id="tonok" type="radio" name="ton" value="OK">
+              <label for="tonok">OK</label>
+
+              <input id="tonf" type="radio" name="ton" value="Fail">
+              <label for="tonf">Fail</label>
+
+              <input id="tonna" type="radio" name="ton" value="N/A">
+              <label for="tonna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Compressors, drills, saws and other tools with pulleys, belts and moving parts are protected with guards (1910.213)</span>
+            <div class="content">
+              <input id="sawok" type="radio" name="saw" value="OK">
+              <label for="sawok">OK</label>
+
+              <input id="sawf" type="radio" name="saw" value="Fail">
+              <label for="sawf">Fail</label>
+
+              <input id="sawna" type="radio" name="saw" value="N/A">
+              <label for="sawna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Fans less than 7 feet above floor level protected with guards (1910.212)</span>
+            <div class="content">
+              <input id="fanok" type="radio" name="fan" value="OK">
+              <label for="fanok">OK</label>
+
+              <input id="fanf" type="radio" name="fan" value="Fail">
+              <label for="fanf">Fail</label>
+
+              <input id="fanna" type="radio" name="fan" value="N/A">
+              <label for="fanna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Grounding rods of proper type with proper cable to clamp connections (1910.268)</span>
+            <div class="content">
+              <input id="clampok" type="radio" name="clamp" value="OK">
+              <label for="clampok">OK</label>
+
+              <input id="clampf" type="radio" name="clamp" value="Fail">
+              <label for="clampf">Fail</label>
+
+              <input id="clampna" type="radio" name="clamp" value="N/A">
+              <label for="clampna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Paints and related materials located in fire resistant storage cabinets with vapor proof electrical wiring and lights and labeled "Flammable - Keep Fire Away" (1910.106, 1910.108)</span>
+            <div class="content">
+              <input id="resistok" type="radio" name="resistant" value="OK">
+              <label for="resistok">OK</label>
+
+              <input id="resistf" type="radio" name="resistant" value="Fail">
+              <label for="resistf">Fail</label>
+
+              <input id="resistna" type="radio" name="resistant" value="N/A">
+              <label for="resistna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Paint storage located away from spark causing sources and posted with a "NO SMOKING" sign (1910.106)</span>
+            <div class="content">
+              <input id="sourceok" type="radio" name="source" value="OK">
+              <label for="sourceok">OK</label>
+
+              <input id="sourcef" type="radio" name="source" value="Fail">
+              <label for="sourcef">Fail</label>
+
+              <input id="sourcena" type="radio" name="source" value="N/A">
+              <label for="sourcena">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Compressed gas cylinders stored a minimum of 20 feet from highly combustible materials (1910.253)</span>
+            <div class="content">
+              <input id="cylinderok" type="radio" name="cylinder" value="OK">
+              <label for="cylinderok">OK</label>
+
+              <input id="cylinderf" type="radio" name="cylinder" value="Fail">
+              <label for="cylinderf">Fail</label>
+
+              <input id="cylinderna" type="radio" name="cylinder" value="N/A">
+              <label for="cylinderna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Oxygen cylinders separated from gas cylinders and combustible materials by a minimum of 20 feet (1910.253)</span>
+            <div class="content">
+              <input id="oxyok" type="radio" name="oxy" value="OK">
+              <label for="oxyok">OK</label>
+
+              <input id="oxyf" type="radio" name="oxy" value="Fail">
+              <label for="oxyf">Fail</label>
+
+              <input id="oxyna" type="radio" name="oxy" value="N/A">
+              <label for="oxyna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Compressed gas and oxygen cylinders in upright position with CPS chained or otherwise protected from falling or being knocked over (1910.253)</span>
+            <div class="content">
+              <input id="cpsok" type="radio" name="cps" value="OK">
+              <label for="cpsok">OK</label>
+
+              <input id="cpsf" type="radio" name="cps" value="Fail">
+              <label for="cpsf">Fail</label>
+
+              <input id="cpsna" type="radio" name="cps" value="N/A">
+              <label for="cpsna">N/A</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>"NO SMOKING" signs posted above all gas and oxygen cylinders (1910.10)</span>
+            <div class="content">
+              <input id="goxyok" type="radio" name="goxy" value="OK">
+              <label for="goxyok">OK</label>
+
+              <input id="goxyf" type="radio" name="goxy" value="Fail">
+              <label for="goxyf">Fail</label>
+
+              <input id="goxyna" type="radio" name="goxy" value="N/A">
+              <label for="goxyna">N/A</label>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+  		<fieldset>
+  			<h3>Terminal Inspection (Shop Terminal)</h3>
+
+        <textarea row="3" cols="3" name="comments" placeholder="Comments"></textarea>
+
+        <input type="file" name="file">
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button type="submit" class="btn btn-next">Submit</button>
+        </div>
+  		</fieldset>
+
+  		<!-- multistep form, observations as dropdowns, correct and questionable checkbox have observation name, observation turns green when either checkbox is on-->
+
+  	</form>
+  </section>
+
+  <section>
+    <footer><p class="copyright">&copy; 2018 Florida Rock &amp; Tank Lines, INC</p></footer>
+  </section>
+
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

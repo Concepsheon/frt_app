@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--<meta name="description" content="">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Florida Rock &amp; Tank Lines, Inc.</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="apple-touch-startup-image" href="splash.png" />
+  <!--<link rel="stylesheet" href="style.css">-->
+
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideAddressBar, 0);
+    }, false);
+
+    var width = 0;
+
+    function hideAddressBar() {
+      if(window.innerWidth != width) {
+      	width = window.innerWidth;
+
+      	var orient = width == 320 ? "profile" : "landscape";
+
+      	document.body.setAttribute("orient", orient);
+      		setTimeout(function() {
+      			window.scrollTo(0, 1);
+      		}, 100);
+      	}
+      }
+      setInterval(hideAddressBar, 100);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <section>
+    <nav>
+      <a class="nav-brand" href="index.html"><img id="logo" src="splash.png" alt="Florida Rock &amp; Tank Lines, Inc" width="200" height="80"/></a>
+    </nav>
+  </section>
+
+  <section id="content">
+  	<h2 style="text-align: center;">Delivery Observation Report</h2>
+  	<form>
+  		<fieldset>
+  			<!--<progress value="0" max="100"></progress>-->
+  			<input type="text" name="location" placeholder="Location">
+  			<input type="number" name="unit" placeholder="Unit Number">
+  			<input type="text" name="driver" placeholder="Driver">
+
+  			<textarea col="5" row="3" name="comments" placeholder="Comments"></textarea>
+
+  			<p>Observed By</p>
+  			<input type="text" name="name" placeholder="Name">
+  			<input type="text" name="title" placeholder="Title">
+
+  			<p>Date/Time</p>
+  			<input type="date" name="date">
+  			<input type="time" name="time">
+
+  			<div class="button-group">
+          <a class="btn btn-back" href="index.html">Back</a>
+          <a class="btn btn-next" href="#">Next</a>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Delivery Observations</h3>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Enters facility using caution to watch all clearances and positions transport conveinent to fills</span>
+
+            <div class="content">
+              <input id="ec" type="radio" name="entering" value="Correct">
+              <label for="ec">Correct</label>
+
+              <input id="eq" type="radio" name="entering" value="Questionable">
+              <label for="eq">Questionable</label>
+
+              <textarea rows="3" col="3" name="entering-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Sets parking brake, turns off engine, parks in gear</span>
+
+            <div class="content">
+              <input id="pc" type="radio" name="parking" value="Correct">
+              <label for="pc">Correct</label>
+
+              <input id="pq" type="radio" name="parking" value="Questionable">
+              <label for="pq">Questionable</label>
+
+              <textarea rows="3" col="3" name="parking-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Ensures proper delivery location, performs SPSA</span>
+
+            <div class="content">
+              <input id="dc" type="radio" name="delivery" value="Correct">
+              <label for="dc">Correct</label>
+
+              <input id="dq" type="radio" name="delivery" value="Questionable">
+              <label for="dq">Questionable</label>
+
+              <textarea rows="3" col="3" name="delivery-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Exits cab using 3 point stance</span>
+
+            <div class="content">
+              <input id="exc" type="radio" name="exiting" value="Correct">
+              <label for="exc">Correct</label>
+
+              <input id="exq" type="radio" name="exiting" value="Questionable">
+              <label for="exq">Questionable</label>
+
+              <textarea rows="3" col="3" name="exiting-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Puts out 3-5 cones to barricade unloading area</span>
+
+            <div class="content">
+              <input id="uc" type="radio" name="unloading" value="Correct"> 
+              <label for="uc">Correct</label>
+
+              <input id="uq" type="radio" name="unloading" value="Questionable">
+              <label for="uq">Questionable</label>
+
+              <textarea rows="3" col="3" name="unloading-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Makes sure all tanks are labeled</span>
+
+            <div class="content">
+              <input id="lc" type="radio" name="labeled" value="Correct"> 
+              <label for="lc">Correct</label>
+
+              <input id="lq" type="radio" name="labeled" value="Questionable">
+              <label for="lq">Questionable</label>
+
+              <textarea rows="3" col="3" name="labeled-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Opens all fill box covers/caps and gauges each tank, replaces fill caps after gauging</span>
+
+            <div class="content">
+              <input id="gc" type="radio" name="gauging" value="Correct"> 
+              <label for="gc">Correct</label>
+
+              <input id="gq" type="radio" name="gauging" value="Questionable">
+              <label for="gq">Questionable</label>
+
+              <textarea rows="3" col="3" name="gauging-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Records readings on driver's copy of bill of lading</span>
+
+            <div class="content">
+              <input id="rc" type="radio" name="readings" value="Correct"> 
+              <label for="rc">Correct</label>
+
+              <input id="rq" type="radio" name="readings" value="Questionable">
+              <label for="rq">Questionable</label>
+
+              <textarea rows="3" col="3" name="readings-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Delivery Observations</h3>
+
+        <div class="accordion">
+          <div class='accordion-item'>
+            <span>Checks quantities/products on bill of lading and compares to product label tags on transport</span>
+
+            <div class="content">
+              <input id="quanc" type="radio" name="quantities" value="Correct">
+              <label for="quanc">Correct</label>
+
+              <input id="quanq" type="radio" name="quantities" value="Questionable">
+              <label for="quanq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="quantities-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Checks tank charts to verify load will fit</span>
+
+            <div class="content">
+              <input id="vc" type="radio" name="verify" value="Correct">
+              <label for="vc">Correct</label>
+
+              <input id="vq" type="radio" name="verify" value="Questionable">
+              <label for="vq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="verify-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Removes bucket and spill pads. Must be accessible.</span>
+
+            <div class="content">
+              <input id="remc" type="radio" name="removing" value="Correct">
+              <label for="remc">Correct</label>
+
+              <input id="remq" type="radio" name="removing" value="Questionable">
+              <label for="remq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="removing-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Removes a vapor hose from hose tray/tube, hooks hose end to tank, then connects other end to trailer vapor recovery system</span>
+
+            <div class="content">
+              <input id="recovc" type="radio" name="recovery" value="Correct">
+              <label for="recovc">Correct</label>
+
+              <input id="recovq" type="radio" name="recovery" value="Questionable">
+              <label for="recovq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="recovery-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Removes and hooks up other vapor hose the same way (both vapor hoses must be in place before any product is discharged). Required if not manifolded</span>
+
+            <div class="content">
+              <input id="hookc" type="radio" name="hook" value="Correct">
+              <label for="hookc">Correct</label>
+
+              <input id="hookq" type="radio" name="hook" value="Questionable">
+              <label for="hookq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="hook-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Removes delivery hose from hose tray/tube, removes fill cap, attaches fitting to fill pipe adapter and locks fitting handle. Connects hose to drop fitting and then connects other end of hose to trailer discharge head.</span>
+
+            <div class="content">
+              <input id="cc" type="radio" name="connects" value="Correct">
+              <label for="cc">Correct</label>
+
+              <input id="cq" type="radio" name="connects" value="Questionable">
+              <label for="cq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="connects-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Compares the product tag on the storage tank to the product label on the transport</span>
+
+            <div class="content">
+              <input id="tagc" type="radio" name="tag" value="Correct">
+              <label for="tagc">Correct</label>
+
+              <input id="tagq" type="radio" name="tag" value="Questionable">
+              <label for="tagq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="tag-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Delivery Observations</h3>
+        <div class="accordion">
+          <div class='accordion-item'>
+            <span>Removes the cover from the compartment to be unloaded and connects the hose to it</span>
+
+            <div class="content">
+              <input id="compc" type="radio" name="compartment" value="Correct">
+              <label for="compc">Correct</label>
+
+              <input id="compq" type="radio" name="compartment" value="Questionable">
+              <label for="compq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="compartment-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Double checks the product ID labels</span>
+
+            <div class="content">
+              <input id="idc" type="radio" name="id" value="Correct">
+              <label for="idc">Correct</label>
+
+              <input id="idq" type="radio" name="id" value="Questionable">
+              <label for="idq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="id-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Opens internal valves</span>
+
+            <div class="content">
+              <input id="inc" type="radio" name="internal" value="Correct">
+              <label for="inc">Correct</label>
+
+              <input id="inq" type="radio" name="internal" value="Questionable">
+              <label for="inq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="internal-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Slowly opens discharge valve half way and checks for leaks</span>
+
+            <div class="content">
+              <input id="leakc" type="radio" name="leaks" value="Correct">
+              <label for="leakc">Correct</label>
+
+              <input id="leakq" type="radio" name="leaks" value="Questionable">
+              <label for="leakq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="leaks-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Fully opens discharge valve and checks again for leaks</span>
+
+            <div class="content">
+              <input id="fullc" type="radio" name="fully" value="Correct">
+              <label for="fullc">Correct</label>
+
+              <input id="fullq" type="radio" name="fully" value="Questionable">
+              <label for="fullq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="fully-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Follow steps 16-22 for hooking up and starting flow with second delivery hose</span>
+
+            <div class="content">
+              <input id="stepsc" type="radio" name="steps" value="Correct">
+              <label for="stepsc">Correct</label>
+
+              <input id="stepsq" type="radio" name="steps" value="Questionable">
+              <label for="stepsq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="steps-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>When changing compartments, verifies compartment is empty by looking through sight glass, drains hose and closes discharge valve before unlocking fitting and moving hose</span>
+
+            <div class="content">
+              <input id="unlockc" type="radio" name="unlocking" value="Correct">
+              <label for="unlockc">Correct</label>
+
+              <input id="unlockq" type="radio" name="unlocking" value="Questionable">
+              <label for="unlockq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="unlocking-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Delivery Observations</h3>
+
+        <div class="accordion">
+          <div class='accordion-item'>
+            <span>Follow steps 17-19, 21 and 22 to restart product flow</span>
+
+            <div class="content">
+              <input id="restartc" type="radio" name="restart" value="Correct">
+              <label for="restartc">Correct</label>
+
+              <input id="restartq" type="radio" name="restart" value="Questionable">
+              <label for="restartq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="restart-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Stays at the unloading controls and watches over entire process</span>
+
+            <div class="content">
+              <input id="stayc" type="radio" name="stays" value="Correct">
+              <label for="stayc">Correct</label>
+
+              <input id="stayq" type="radio" name="stays" value="Questionable">
+              <label for="stayq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="stays-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Verifies compartment is empty by looking through sight glass</span>
+
+            <div class="content">
+              <input id="sightc" type="radio" name="sight" value="Correct">
+              <label for="sightc">Correct</label>
+
+              <input id="sightq" type="radio" name="sight" value="Questionable">
+              <label for="sightq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="sight-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Walks delivery hose empty while still connected</span>
+
+            <div class="content">
+              <input id="wac" type="radio" name="walk" value="Correct">
+              <label for="wac">Correct</label>
+
+              <input id="waq" type="radio" name="walk" value="Questionable">
+              <label for="waq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="walk-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Closes discharge valve, disconnects delivery hose from transport, replaces cap and walks empty</span>
+
+            <div class="content">
+              <input id="disc" type="radio" name="disconnect" value="Correct">
+              <label for="disc">Correct</label>
+
+              <input id="disq" type="radio" name="disconnect" value="Questionable">
+              <label for="disq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="disconnect-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Unlocks and removes fitting, replaces storage tank cap, returns delivery hose to hose tray/tube using proper lifting techniques</span>
+
+            <div class="content">
+              <input id="techc" type="radio" name="technique" value="Correct">
+              <label for="techc">Correct</label>
+
+              <input id="techq" type="radio" name="technique" value="Questionable">
+              <label for="techq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="technique-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Follows steps 25-28 for other delivery hose</span>
+
+            <div class="content">
+              <input id="otherc" type="radio" name="other" value="Correct">
+              <label for="otherc">Correct</label>
+
+              <input id="otherq" type="radio" name="other" value="Questionable">
+              <label for="otherq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="other-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Delivery Observations</h3>
+
+        <div class="accordion">
+          <div class='accordion-item'>
+            <span>Closes internal valves</span>
+
+            <div class="content">
+              <input id="closec" type="radio" name="close" value="Correct">
+              <label for="closec">Correct</label>
+
+              <input id="closeq" type="radio" name="close" value="Questionable">
+              <label for="closeq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="close-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Walks vapor hose empty, removes fitting from storage tank vapor adapter, then disconnects from the transport, returns to the hose tray/tube and uses all straps to secure hoses. Follows same procedure for second VR hose.</span>
+
+            <div class="content">
+              <input id="proc" type="radio" name="procedure" value="Correct">
+              <label for="proc">Correct</label>
+
+              <input id="proq" type="radio" name="procedure" value="Questionable">
+              <label for="proq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="procedure-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Taking each tank in turn, removes cap, gauges, replaces cap and fill box lid</span>
+
+            <div class="content">
+              <input id="eachc" type="radio" name="each" value="Correct">
+              <label for="eachc">Correct</label>
+
+              <input id="eachq" type="radio" name="each" value="Questionable">
+              <label for="eachq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="each-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Records stick readings on driver's copy of BOL</span>
+
+            <div class="content">
+              <input id="bolc" type="radio" name="bol" value="Correct">
+              <label for="bolc">Correct</label>
+
+              <input id="bolq" type="radio" name="bol" value="Questionable">
+              <label for="bolq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="bol-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Gets paperwork signed, keeps doors locked, takes keys out of ignition</span>
+
+            <div class="content">
+              <input id="paperc" type="radio" name="paperwork" value="Correct">
+              <label for="paperc">Correct</label>
+
+              <input id="paperq" type="radio" name="paperwork" value="Questionable">
+              <label for="paperq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="paperwork-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Upon returning to truck, performs walk around inspection and tire check</span>
+
+            <div class="content">
+              <input id="inspec" type="radio" name="inspection" value="Correct">
+              <label for="inspec">Correct</label>
+
+              <input id="inspeq" type="radio" name="inspection" value="Questionable">
+              <label for="inspeq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="inspection-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Returns cones to holder on transport and checks the area</span>
+
+            <div class="content">
+              <input id="areac" type="radio" name="area" value="Correct">
+              <label for="areac">Correct</label>
+
+              <input id="areaq" type="radio" name="area" value="Questionable">
+              <label for="areaq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="area-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class='accordion-item'>
+            <span>Connects seatbelt, safely exits station</span>
+
+            <div class="content">
+              <input id="statc" type="radio" name="station" value="Correct">
+              <label for="statc">Correct</label>
+
+              <input id="statq" type="radio" name="station" value="Questionable">
+              <label for="statq">Questionable</label>
+
+              <textarea rows="3" cols="3" name="station-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+      <fieldset>
+        <h3>Delivery Observation Report</h3>
+
+        <textarea row="3" cols="3" placeholder="Comments"></textarea>
+        <input type="file" name="file"/>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button type="submit" class="btn btn-next">Submit</button>
+        </div>
+      </fieldset>
+
+  	</form>
+  </section>
+
+  <section>
+    <footer><p class="copyright">&copy; 2018 Florida Rock &amp; Tank Lines, INC</p></footer>
+  </section>
+
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

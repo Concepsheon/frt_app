@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--<meta name="description" content="">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Florida Rock &amp; Tank Lines, Inc.</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="apple-touch-startup-image" href="splash.png" />
+  <!--<link rel="stylesheet" href="style.css">-->
+
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideAddressBar, 0);
+    }, false);
+
+    var width = 0;
+
+    function hideAddressBar() {
+      if(window.innerWidth != width) {
+      	width = window.innerWidth;
+
+      	var orient = width == 320 ? "profile" : "landscape";
+
+      	document.body.setAttribute("orient", orient);
+      		setTimeout(function() {
+      			window.scrollTo(0, 1);
+      		}, 100);
+      	}
+      }
+      setInterval(hideAddressBar, 100);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <section>
+    <nav>
+      <a class="nav-brand" href="index.html"><img id="logo" src="splash.png" alt="Florida Rock &amp; Tank Lines, Inc" width="200" height="80"/></a>
+    </nav>
+  </section>
+
+  <section id="content">
+  	<h2 style="text-align: center;">Driver Observation Report</h2>
+  	
+    <form enctype="multipart/form-data">
+  		<fieldset>
+  			<!--<progress value="0" max="100"></progress>-->
+  			<input type="text" name="location" placeholder="Location">
+  			<input type="number" name="hwy" placeholder="HWY #">
+  			<input type="text" name="driver" placeholder="Driver">
+
+  			<input type="text" name="tractor" placeholder="Tractor">
+  			<input type="text" name="trailer" placeholder="Trailer">
+        <input type="text" name="direction" placeholder="Direction">
+        <input type="text" name="terminal" placeholder="Terminal">
+
+  			<p>Date/Time</p>
+  			<input type="date" name="date">
+  			<input type="time" name="time">
+
+  			<div class="button-group">
+          <a class="btn btn-back" href="index.html">Back</a>
+          <a class="btn btn-next" href="#">Next</a>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+        <h3>Moving Observations</h3>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Road Conditions</span>
+
+            <div class="content">
+              <input id="dry" type="radio" name="road" value="dry">
+              <label for="dry">Dry</label>
+
+              <input id="icy" type="radio" name="road" value="icy">
+              <label for="icy">Icy</label>
+
+              <input id="snow" type="radio" name="road" value="snow">
+              <label for="snow">Snow</label>
+
+              <input id="wet" type="radio" name="road" value="wet">
+              <label for="wet">Wet</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Area</span>
+
+            <div class="content">
+              <input id="business" type="radio" name="area" value="Business">
+              <label for="business">Business</label>
+
+              <input id="res" type="radio" name="area" value="Residential">
+              <label for="res">Residential</label>
+
+              <input id="rural" type="radio" name="area" value="Rural">
+              <label for="rural">Rural</label>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Road Type</span>
+
+            <div class="content">
+              <input id="hill" type="radio" name="type" value="Hilly">
+              <label for="hill">Hilly</label>
+
+              <input id="level" type="radio" name="type" value="Level">
+              <label for="level">Level</label>
+
+              <input id="rough" type="radio" name="type" value="Rough">
+              <label for="rough">Rough</label>
+
+              <input id="winding" type="radio" name="type" value="Winding">
+              <label for="winding">Winding</label>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span># Lanes</span>
+
+            <div class="content">
+              <div >
+                <input id="two" type="radio" name="lanes" value="two">
+                <label for="two">2</label>
+
+                <input id="three" type="radio" name="lanes" value="three">
+                <label for="three">3</label>
+
+                <input id="four" type="radio" name="lanes" value="four">
+                <label for="four">4</label>
+              </div>
+
+              <div>
+                <input id="multiple" type="radio" name="lanes" value="multiple">
+                <label for="multiple">Multiple</label>
+
+                <input id="divided" type="radio" name="lanes" value="divided">
+                <label for="divided">Divided</label>
+
+                <input id="undivided" type="radio" name="lanes" value="undivided">
+                <label for="undivided">Undivided</label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Traffic</span>
+
+            <div class="content">
+              <input id="heavy" type="radio" name="traffic" value="heavy"> 
+              <label for="heavy">Heavy</label>
+
+              <input id="medium" type="radio" name="traffic" value="medium"> 
+              <label for="medium">Medium</label>
+
+              <input id="light" type="radio" name="traffic" value="light"> 
+              <label for="light">Light</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Weather</span>
+
+            <div class="content">
+              <input id="clear" type="radio" name="weather" value="Clear"> 
+              <label for="clear">Clear</label>
+
+              <input id="cloudy" type="radio" name="weather" value="Cloudy"> 
+              <label for="cloudy">Cloudy</label>
+
+              <input id="fog" type="radio" name="weather" value="fog"> 
+              <label for="fog">Fog</label>
+
+              <input id="rain" type="radio" name="weather" value="rain"> 
+              <label for="rain">Rain</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Moving Observations</h3>
+
+        <div class="accordion">
+            <div class="accordion-item">
+              <span>Seatbelt in use</span>
+
+              <div class="content">
+                <input id="yes" type="radio" name="use" value="yes">
+                <label for="yes">Yes</label>
+
+                <input id="no" type="radio" name="use" value="no">
+                <label for="no">No</label>
+              </div>
+            </div>
+        </div>
+
+        <div>
+          <input type="number" name="posted" placeholder="Posted Speed">
+
+          <input type="number" name="actual" placeholder="Actual Speed">
+
+          <input type="number" name="miles" placeholder="Miles Observed">
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Moving Observations</h3>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Posted Speed</span>
+            <div class="content">
+              <div>
+                <input id="main" type="radio" name="speed" value="Maintains posted speed">
+                <label for="main">Maintains posted speed</label>
+              </div>
+
+              <div>
+                <input id="exceed" type="radio" name="speed" value="Exceeds posted speed">
+                <label for="exceed">Exceeds posted speed</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Signaling</span>
+            <div class="content">
+              <input id="proper" type="radio" name="signaling" value="Proper signaling">
+              <label for="proper">Proper signaling</label>
+
+              <input id="improper" type="radio" name="signaling" value="Improper signaling">
+              <label for="improper">Improper signaling</label>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Following Distance</span>
+            <div class="content">
+              <div>
+                <input id="pf" type="radio" name="distance" value="Maintains proper following distance">
+                <label for="pf">Maintains proper following distance</label>
+              </div>
+
+              <div>
+                <input id="close" type="radio" name="distance" value="Following too closely">
+                <label for="close">Following too closely</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Lane Change</span>
+            <div class="content">
+              <div>
+                <input id="cl" type="radio" name="change" value="Changes lanes properly">
+                <label for="cl">Changes lanes properly</label>
+              </div>
+
+              <div>
+                <input id="ilc" type="radio" name="change" value="Improper lane change">
+                <label for="ilc">Improper lane change</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Traffic signals and signs</span>
+            <div class="content">
+              <div>
+                <input id="ots" type="radio" name="obey" value="Obey all traffic signals and signs">
+                <label for="ots">Obey all traffic signals and signs</label>
+              </div>
+
+              <div>
+                <input id="dots" type="radio" name="obey" value="Disobeys sign/traffic signal">
+                <label for="dots">Disobeys sign/traffic signal</label>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Driver Observation Report</h3>
+
+        <textarea row="3" cols="3" placeholder="Comments"></textarea>
+
+        <input type="text" name="observer" placeholder="Observer">
+        <input type="file" name="file"/>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button type="submit" class="btn btn-next">Submit</button>
+        </div>
+  		</fieldset>
+
+  	</form>
+  </section>
+
+  <section>
+    <footer><p class="copyright">&copy; 2018 Florida Rock &amp; Tank Lines, INC</p></footer>
+  </section>
+
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

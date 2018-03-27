@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--<meta name="description" content="">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Florida Rock &amp; Tank Lines, Inc.</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="apple-touch-startup-image" href="splash.png" />
+  <!--<link rel="stylesheet" href="style.css">-->
+
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideAddressBar, 0);
+    }, false);
+
+    var width = 0;
+
+    function hideAddressBar() {
+      if(window.innerWidth != width) {
+      	width = window.innerWidth;
+
+      	var orient = width == 320 ? "profile" : "landscape";
+
+      	document.body.setAttribute("orient", orient);
+      		setTimeout(function() {
+      			window.scrollTo(0, 1);
+      		}, 100);
+      	}
+      }
+      setInterval(hideAddressBar, 100);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <section>
+    <nav>
+      <a class="nav-brand" href="index.html"><img id="logo" src="splash.png" alt="Florida Rock &amp; Tank Lines, Inc" width="200" height="80"/></a>
+    </nav>
+  </section>
+
+  <section id="content">
+  	<h2 style="text-align: center;">Tractor &amp; Trailer Inspection</h2>
+  	<form>
+
+  		<fieldset>
+  			<!--<progress value="0" max="100"></progress>-->
+  			<input type="text" name="inspector" placeholder="Inspector">
+  			<input type="number" name="unit" placeholder="Unit #">
+  			<input type="text" name="driver" placeholder="Driver">
+
+        <input type="text" name="terminal" placeholder="Terminal">
+
+  			<p>Date/Time</p>
+  			<input type="date" name="date">
+  			<input type="time" name="time">
+
+  			<div class="button-group">
+          <a class="btn btn-back" href="index.html">Back</a>
+          <a class="btn btn-next" href="#">Next</a>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+        <h3>Tractor Inspection</h3>
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Overall Appearance</span>
+
+            <div class="content">
+              <input id="app-ok" type="radio" name="appearance" value="OK">
+              <label for="app-ok">OK</label>
+
+              <input id="app-attn" type="radio" name="appearance" value="Attn">
+              <label for="app-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="app-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Springs and Airbags</span>
+
+            <div class="content">
+              <input id="air-ok" type="radio" name="airbags" value="OK">
+              <label for="air-ok">OK</label>
+
+              <input id="air-attn" type="radio" name="airbags" value="Attn">
+              <label for="air-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="air-comments" placeholder="Comments"></textarea>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Brakes and Drums</span>
+
+            <div class="content">
+              <input id="brakes-ok" type="radio" name="brakes" value="OK">
+              <label for="brakes-ok">OK</label>
+
+              <input id="brakes-attn" type="radio" name="brakes" value="Attn">
+              <label for="level">Attn.</label>
+
+              <textarea rows="3" cols="3" name="brakes-comments" placeholder="Comments"></textarea>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Tire Condition</span>
+
+            <div class="content">
+              <input id="tire-ok" type="radio" name="tires" value="OK">
+              <label for="tire-ok">OK</label>
+
+              <input id="tire-attn" type="radio" name="tires" value="Attn">
+              <label for="tire-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="tires-comments" placeholder="Comments"></textarea>
+
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Air Pressure @ 100PSI</span>
+
+            <div class="content">
+              <input id="psi-ok" type="radio" name="psi" value="OK">
+              <label for="psi-ok">OK</label>
+
+              <input id="psi-attn" type="radio" name="psi" value="Attn"> 
+              <label for="psi-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" comments="psi-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Tractor Inspection</h3>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Annual Inspection Date Current</span>
+
+            <div class="content">
+              <input id="current-ok" type="radio" name="current" value="OK"> 
+              <label for="current-ok">OK</label>
+
+              <input id="current-attn" type="radio" name="current" value="Attn"> 
+              <label for="current-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="current-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Fire Extinguisher Charged</span>
+
+            <div class="content">
+              <input id="fire-ok" type="radio" name="fire" value="OK">
+              <label for="fire-ok">OK</label>
+
+              <input id="fire-attn" type="radio" name="fire" value="Attn">
+              <label for="fire-attn">Attn</label>
+
+              <textarea rows="3" cols="3" name="fire-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Tractor Locked</span>
+
+            <div class="content">
+              <input id="lock-ok" type="radio" name="locked" value="OK">
+              <label for="lock-ok">OK</label>
+
+              <input id="lock-attn" type="radio" name="locked" value="Attn">
+              <label for="lock-attn">Attn</label>
+
+              <textarea rows="3" cols="3" name="locked-comments" placeholder="Comments"></textarea>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <span>Visible Leaks</span>
+
+              <div class="content">
+                <input id="leak-ok" type="radio" name="leak" value="OK">
+                <label for="leak-ok">OK</label>
+
+                <input id="leak-attn" type="radio" name="leak" value="Attn">
+                <label for="leak-attn">Attn</label>
+
+                <textarea rows="3" cols="3" name="leak-comments" placeholder="Comments"></textarea>
+              </div>
+            </div>
+        </div>
+
+        
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+  		<fieldset>
+  			<h3>Trailer Inspection</h3>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Overall Apperance</span>
+            <div class="content">
+              <input id="trai-app" type="radio" name="trailer" value="OK">
+              <label for="trai-app">OK</label>
+                
+              <input id="trai-attn" type="radio" name="trailer" value="Attn">
+              <label for="trai-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="trai-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Equalizers &amp; Hangers</span>
+            <div class="content">
+              <input id="hang-ok" type="radio" name="hanger" value="OK">
+              <label for="hang-ok">OK</label>
+
+              <input id="hang-attn" type="radio" name="hanger" value="Attn">
+              <label for="hang-attn">Attn</label>
+
+              <textarea rows="3" cols="3" name="hanger-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Springs &amp; Hangers</span>
+            <div class="content">
+              <input id="spring-ok" type="radio" name="springs" value="OK">
+              <label for="spring-ok">OK</label>
+              
+              <input id="spring-attn" type="radio" name="springs" value="Attn">
+              <label for="spring-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="spring-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Brake Shoes &amp; Drums</span>
+            <div class="content">
+              <input id="bs-ok" type="radio" name="drums" value="OK">
+              <label for="bs-ok">OK</label>
+              
+              <input id="bs-attn" type="radio" name="drums" value="Attn">
+              <label for="bs-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="drums-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Brake Interlocks &amp; Buttons</span>
+            <div class="content">
+              <input id="button-ok" type="radio" name="button" value="OK">
+              <label for="button-ok">OK</label>
+              
+              <input id="button-attn" type="radio" name="button" value="Attn">
+              <label for="button-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="button-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+  		</fieldset>
+
+      <fieldset>
+        <h3>Trailer Inspection</h3>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Tire Condition</span>
+            <div class="content">
+              <input id="con-ok" type="radio" name="condition" value="OK">
+              <label for="trai-app">OK</label>
+                
+              <input id="con-attn" type="radio" name="condition" value="Attn">
+              <label for="con-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="condition-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Air Pressure @ 100PSI</span>
+            <div class="content">
+              <input id="press-ok" type="radio" name="pressure" value="OK">
+              <label for="press-ok">OK</label>
+
+              <input id="press-attn" type="radio" name="pressure" value="Attn">
+              <label for="press-attn">Attn</label>
+
+              <textarea rows="3" cols="3" name="pressure-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Fitting Box Securement</span>
+            <div class="content">
+              <input id="fitting-ok" type="radio" name="fitting" value="OK">
+              <label for="fitting-ok">OK</label>
+              
+              <input id="fitting-attn" type="radio" name="fitting" value="Attn">
+              <label for="fitting-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="fitting-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Vapor Lines &amp; Caps</span>
+            <div class="content">
+              <input id="vapor-ok" type="radio" name="vapor" value="OK">
+              <label for="vapor-ok">OK</label>
+              
+              <input id="vapor-attn" type="radio" name="vapor" value="Attn">
+              <label for="vapor-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="vapor-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Inspections</span>
+            <div class="content">
+              <input id="inspec-ok" type="radio" name="inspection" value="OK">
+              <label for="inspec-ok">OK</label>
+              
+              <input id="inspec-attn" type="radio" name="inspection" value="Attn">
+              <label for="inspec-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="inspection-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h3>Trailer Inspection</h3>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <span>Prevent Mixes &amp; Spills Decal</span>
+            <div class="content">
+              <input id="spill-ok" type="radio" name="spills" value="OK">
+              <label for="spill-ok">OK</label>
+                
+              <input id="spill-attn" type="radio" name="spills" value="Attn">
+              <label for="spill-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="spills-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Recruiting Decal</span>
+            <div class="content">
+              <input id="decal-ok" type="radio" name="decal" value="OK">
+              <label for="decal-ok">OK</label>
+
+              <input id="decal-attn" type="radio" name="decal" value="Attn">
+              <label for="decal-attn">Attn</label>
+
+              <textarea rows="3" cols="3" name="decal-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>No Short Sticks</span>
+            <div class="content">
+              <input id="stick-ok" type="radio" name="short" value="OK">
+              <label for="stick-ok">OK</label>
+              
+              <input id="stick-attn" type="radio" name="short" value="Attn">
+              <label for="stick-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="stick-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Hoses &amp; Fittings Properly Stored</span>
+            <div class="content">
+              <input id="store-ok" type="radio" name="stored" value="OK">
+              <label for="store-ok">OK</label>
+              
+              <input id="store-attn" type="radio" name="stored" value="Attn">
+              <label for="store-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="stored-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <span>Placards In Good Condition</span>
+            <div class="content">
+              <input id="plac-ok" type="radio" name="placard" value="OK">
+              <label for="plac-ok">OK</label>
+              
+              <input id="plac-attn" type="radio" name="placard" value="Attn">
+              <label for="plac-attn">Attn.</label>
+
+              <textarea rows="3" cols="3" name="placard-comments" placeholder="Comments"></textarea>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button class="btn btn-next">Next</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+  			<h3>Tractor/Trailer Inspection</h3>
+
+        <textarea row="3" cols="3" name="comments" placeholder="Comments"></textarea>
+
+        <input type="file" name="file"/>
+
+        <div class="button-group">
+          <button class="btn btn-back">Back</button>
+          <button type="submit" class="btn btn-next">Submit</button>
+        </div>
+  		</fieldset>
+
+  	</form>
+  </section>
+
+  <section>
+    <footer><p class="copyright">&copy; 2018 Florida Rock &amp; Tank Lines, INC</p></footer>
+  </section>
+
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
