@@ -515,6 +515,10 @@
         fieldset {
         	border: 0 none;
         }
+        
+        fieldset:not(:first-of-type) {
+          display: none;
+        }
 
         input:not([type="radio"]), textarea {
           border: 0;
@@ -529,6 +533,7 @@
           -moz-box-shadow:;
           box-shadow: 0 1px 1px rgba(black, 0.1);*/
         }
+        
 
         .accordion span {
           position: relative;
@@ -603,6 +608,14 @@
           -webkit-transition: all 0.35s ease 0.15s;
           -o-transition: all 0.35s ease 0.15s;
           transition: all 0.35s ease 0.15s;
+        }
+        
+        input[type='button'], input[type='submit'] {
+          display: inline;
+          width: 25%;
+          color: white;
+          padding: 10px;
+          cursor: pointer;
         }
 
         .btn {
